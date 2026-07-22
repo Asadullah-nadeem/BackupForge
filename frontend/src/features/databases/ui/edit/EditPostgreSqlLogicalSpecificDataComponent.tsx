@@ -366,13 +366,7 @@ export const EditPostgreSqlLogicalSpecificDataComponent = ({
       isAllFieldsFilled = false;
     if (!editingDatabase.postgresqlLogical?.database) isAllFieldsFilled = false;
 
-    const isLocalhostDb =
-      editingDatabase.postgresqlLogical?.host?.includes('localhost') ||
-      editingDatabase.postgresqlLogical?.host?.includes('127.0.0.1');
 
-    const isSupabaseDb =
-      editingDatabase.postgresqlLogical?.host?.includes('supabase') ||
-      editingDatabase.postgresqlLogical?.username?.includes('supabase');
 
     return (
       <>
@@ -427,41 +421,7 @@ export const EditPostgreSqlLogicalSpecificDataComponent = ({
           />
         </div>
 
-        {isLocalhostDb && (
-          <div className="mb-1 flex">
-            <div className="min-w-[150px]" />
-            <div className="max-w-[200px] text-xs text-gray-500 dark:text-gray-400">
-              Please{' '}
-              <a
-                href="https://BackupForge.com/faq/localhost"
-                target="_blank"
-                rel="noreferrer"
-                className="!text-blue-600 dark:!text-blue-400"
-              >
-                read this document
-              </a>{' '}
-              to study how to backup local database
-            </div>
-          </div>
-        )}
 
-        {isSupabaseDb && (
-          <div className="mb-1 flex">
-            <div className="min-w-[150px]" />
-            <div className="max-w-[200px] text-xs text-gray-500 dark:text-gray-400">
-              Please{' '}
-              <a
-                href="https://BackupForge.com/faq/supabase"
-                target="_blank"
-                rel="noreferrer"
-                className="!text-blue-600 dark:!text-blue-400"
-              >
-                read this document
-              </a>{' '}
-              to study how to backup Supabase database
-            </div>
-          </div>
-        )}
 
         <div className="mb-1 flex w-full items-center">
           <div className="min-w-[150px]">Port</div>

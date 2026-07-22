@@ -233,12 +233,8 @@ export function EditNotifierComponent({
           <Select
             value={notifier?.notifierType}
             options={[
-              { label: 'Telegram', value: NotifierType.TELEGRAM },
               { label: 'Email', value: NotifierType.EMAIL },
               { label: 'Webhook', value: NotifierType.WEBHOOK },
-              { label: 'Slack', value: NotifierType.SLACK },
-              { label: 'Discord', value: NotifierType.DISCORD },
-              { label: 'Teams', value: NotifierType.TEAMS },
             ]}
             onChange={(value) => {
               setNotifierType(value);

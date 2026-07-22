@@ -378,15 +378,7 @@ export const VerificationsComponent = ({
           <ExclamationCircleOutlined className="shrink-0" />
           <span>
             No verification agents registered - please add it in BackupForge settings tab in
-            &quot;Verification agents&quot; section.{' '}
-            <a
-              href="https://BackupForge.com/restore-verification"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:no-underline"
-            >
-              Learn more
-            </a>
+            &quot;Verification agents&quot; section.
           </span>
         </div>
       )}

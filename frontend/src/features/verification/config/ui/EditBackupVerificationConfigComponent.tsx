@@ -180,15 +180,7 @@ export const EditBackupVerificationConfigComponent = ({ databaseId, onClose }: P
           title={
             <>
               Periodically restore the latest backup into an ephemeral Postgres container to verify
-              it is restorable.{' '}
-              <a
-                href="https://BackupForge.com/restore-verification"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                Read here how it works
-              </a>
+              it is restorable.
             </>
           }
         >

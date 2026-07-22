@@ -220,10 +220,8 @@ export const MainScreenComponent = () => {
   return (
     <div style={{ height: screenHeight }} className="bg-[#0f172a] p-2 md:p-3">
       <div className="mb-2 flex h-[50px] items-center rounded bg-[#1e293b] px-2 py-2 shadow md:mb-3 md:h-[60px] md:p-3">
-        <div className="flex items-center gap-2 hover:opacity-80 md:gap-3">
-          <a href="https://BackupForge.com" target="_blank" rel="noreferrer">
-            <img className="h-[30px] w-[30px] p-1 md:h-[40px] md:w-[40px]" src="/logo.svg" />
-          </a>
+        <div className="flex items-center gap-2 md:gap-3">
+          <img className="h-[30px] w-[30px] p-1 md:h-[40px] md:w-[40px]" src="/logo.svg" />
         </div>
 
         <div className="ml-2 flex-1 pr-2 md:ml-4 md:flex-initial md:pr-0">

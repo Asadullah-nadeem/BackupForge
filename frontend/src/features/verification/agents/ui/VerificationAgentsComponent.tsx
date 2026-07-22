@@ -389,15 +389,7 @@ export const VerificationAgentsComponent = () => {
       </div>
 
       <p className="mb-4 max-w-2xl text-sm text-gray-500 dark:text-gray-400">
-        Agents that run restore verifications to confirm a backup is restorable (
-        <a
-          href="https://BackupForge.com/restore-verification"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          read more
-        </a>
-        )
+        Agents that run restore verifications to confirm a backup is restorable.
       </p>
 
       {isLoading ? (
