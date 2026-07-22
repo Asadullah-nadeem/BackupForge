@@ -1,0 +1,18 @@
+# Runtime state — regenerated at runtime, never committed
+BackupForge-verification.json
+BackupForge-verification.log
+BackupForge-verification.log.old
+BackupForge-verification.daemon.log
+BackupForge-verification.lock
+.env
+.test-tmp/
+
+# Local build artifacts (host binaries)
+BackupForge-verification-agent
+
+# E2E working directories
+e2e/artifacts/
+
+# Editor / VCS
+.idea/
+.vscode/

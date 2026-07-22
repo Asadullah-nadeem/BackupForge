@@ -1,0 +1,23 @@
+# Local dev state — regenerated at runtime, never belongs in a build context
+BackupForge-verification.log
+BackupForge-verification.log.old
+BackupForge-verification.daemon.log
+BackupForge-verification.lock
+BackupForge-verification.json
+
+# Local build artifacts (host binaries)
+BackupForge-verification-agent
+
+# E2E working directories
+e2e/artifacts/
+
+# VCS and editor
+.git/
+.gitignore
+.idea/
+.vscode/
+
+# Docs / env
+*.md
+.env
+.env.example
