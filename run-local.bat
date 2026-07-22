@@ -44,6 +44,9 @@ if not exist "node_modules" (
 )
 echo [INFO] Compiling frontend assets...
 call pnpm run build
+echo [INFO] Copying compiled assets to Go backend...
+if exist "..\backend\ui\build" rd /s /q "..\backend\ui\build"
+xcopy /E /I /Y "out" "..\backend\ui\build\"
 cd ..
     
 echo.

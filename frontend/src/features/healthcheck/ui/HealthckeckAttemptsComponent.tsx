@@ -100,7 +100,7 @@ export const HealthckeckAttemptsComponent = ({ database, onVisibilityChange }: P
         // Set up interval only if healthcheck
         // is enabled and period is 'today'
         if (period === 'today') {
-          interval = setInterval(() => {
+          interval = window.setInterval(() => {
             loadHealthcheckAttempts(false);
           }, 60_000);
         }
